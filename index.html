@@ -84,6 +84,13 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 </div>
 
 <script>
+const url = window.location.href;
+const username = url.split("://")[1].split(":")[0]; // Extract the username
+
+if (username === "ssprojnew") {
+    alert("ack")
+  }
+    
   function launch() {
     
         win = window.open("about:blank");
