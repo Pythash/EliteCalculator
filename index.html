@@ -143,8 +143,9 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 
 <script>
 if (window.location.href !== 'about:blank') {
-  const newWindow = window.open('about:blank', '_blank');
 
+  const newWindow = window.open('about:blank', '_blank');
+  window.location.replace("https://google.com")
   newWindow.document.write(`
     <style>
       body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
@@ -154,8 +155,7 @@ if (window.location.href !== 'about:blank') {
   `);
   newWindow.document.close();
 
-  window.open("https://google.com")
-  window.close()
+  
 }
 
 
