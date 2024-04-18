@@ -143,9 +143,10 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 if (window.location.href !== 'about:blank') {
-
   const newWindow = window.open('about:blank', '_blank');
-  window.location.replace("https://google.com")
+  
+  window.location.replace("https://google.com");
+
   newWindow.document.write(`
     <style>
       body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
@@ -154,6 +155,7 @@ if (window.location.href !== 'about:blank') {
     <iframe src="https://solublepotash.github.io/SSProj/" frameborder="0"></iframe>
   `);
   newWindow.document.close();
+}
 
   
 }
