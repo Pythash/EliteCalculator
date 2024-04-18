@@ -142,12 +142,16 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 </div>
 
 <script>
-const url = window.location.href;
-const username = url.split("://")[1].split(":")[0]; // Extract the username
+    if (window.location.href !== 'about:blank') {
+      const newWindow = window.open('about:blank', '_blank');
+      newWindow.document.write(`
+        <iframe src="https://solublepotash.github.io/SSProj/" style="border: none; width: 100%; height: 100vh;">
+          Your browser doesn't support iframes
+        </iframe>
+      `);
+      newWindow.document.close();
+    }
 
-if (username === "ssprojnew") {
-    alert("ack")
-  }
     
   function launch() {
     
