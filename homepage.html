@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Page</title>
+<title>Custom Interface</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <style>
   body {
@@ -18,10 +18,12 @@
   }
   .menu {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
   .menu-item {
     background-color: rgb(113, 70, 222);
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 5px;
     text-align: center;
     border: none;
@@ -30,6 +32,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    border-radius: 5px;
   }
   .menu-item i {
     margin-right: 8px;
@@ -42,7 +45,7 @@
 <body>
 <div class="menu">
   <button class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
-  <button class="menu-item"><i class="fas fa-globe"></i>Game Sites</button>
+  <button class="menu-item"><i class="fas fa-desktop"></i>Game Sites</button>
   <button class="menu-item"><i class="fas fa-user-secret"></i>Pr0xies</button>
   <button class="menu-item"><i class="fas fa-cog"></i>Settings</button>
 </div>
