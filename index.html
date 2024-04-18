@@ -142,7 +142,14 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-if (window.location.href !== 'about:blank') {
+    
+  
+  
+
+  
+
+
+function launch() {
   const newWindow = window.open('about:blank', '_blank');
   
   window.location.replace("https://google.com");
@@ -152,22 +159,8 @@ if (window.location.href !== 'about:blank') {
       body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
       iframe { position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; }
     </style>
-    <iframe src="https://solublepotash.github.io/SSProj/" frameborder="0"></iframe>
+    <iframe src="https://solublepotash.github.io/SSProj/homepage.html" frameborder="0"></iframe>
   `);
-  newWindow.document.close();
-}
-
-  
-}
-
-
-function launch() {
-  fetch('/SSProj/homepage.html')
-    .then(response => response.text())
-    .then(data => {
-        document.body.innerHTML = data;
-    })
-    .catch(error => console.error('Error loading the homepage:', error));
 }
     
 
