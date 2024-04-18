@@ -53,15 +53,29 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
   .menu-item i {
     margin-right: 8px;
   }
-  .menu-item:hover {
-    background-color: rgba(113, 70, 222, 0.8);
+  .menu-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: -1;
+  }
+  .menu-item:hover::after {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .menu-item:hover {
     border-width: 4px;
   }
 </style>
