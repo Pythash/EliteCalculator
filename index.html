@@ -143,42 +143,26 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
     
-  
-  
-
-  
-
-
-function launch() {
-  const newWindow = window.open('about:blank', '_blank');
-  
-  window.location.replace("https://google.com");
-
-  newWindow.document.write(`
-    <style>
-      body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-      iframe { position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-    </style>
-    <iframe src="https://solublepotash.github.io/SSProj/homepage.html" frameborder="0"></iframe>
-  `);
+  function launch() {
+        var website = "https://solublepotash.github.io/SSProj/homepage.html";
+        var iframe = '<link rel="icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"><iframe src="' + website + '" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>';
+        var win = window.open("about:blank");
+        win.document.write(iframe);
+        win.document.title = "Home | Schoology";
 }
-    
-
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
     button.addEventListener('click', launch);
 });
-
 const anchors = document.querySelectorAll('a');
 anchors.forEach(anchor => {
     anchor.addEventListener('click', launch);
 });
-
 const divs = document.querySelectorAll('.sgy-grid-layout');
 divs.forEach(divs => {
     divs.addEventListener('click', launch);
 });
-
 </script>
+
 
 </body></html>
