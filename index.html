@@ -140,7 +140,7 @@ border-bottom-color: #20A23F;}.HeaderMenuButton-header-button-small-and-below-2f
 </div> 
 </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 if (window.location.href !== 'about:blank') {
 
@@ -159,13 +159,15 @@ if (window.location.href !== 'about:blank') {
 }
 
 
-
-    
-  function launch() {
-    
-        win = window.open("about:blank");
-        win.document.write("<h1>Your Pdeezage Title</h1>");  
+function launch() {
+  fetch('/SSProj/homepage.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.innerHTML = data;
+    })
+    .catch(error => console.error('Error loading the homepage:', error));
 }
+    
 
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
