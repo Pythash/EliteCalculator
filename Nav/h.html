@@ -20,7 +20,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<img src="/Icons/Logo.png" class="logo" width="125" height="125">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,15 +66,15 @@
     border-width: 4px;
   }
   .logo {
-    position:fixed; 
-    top: 0px; 
-    left: 0px;
-    margin: 0px;
-    padding: 0px;
+    position:absolute; 
+    margin: auto;
   }
 </style>
 </head>
 <body>
+<a href="/Nav">
+  <img src="/Icons/Logo.png" class="logo">
+</a>
 <div class="menu">
   <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
   <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
