@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  
+  <body>
+  <link rel="stylesheet" href="index.css">
+  
+  <div class="calculator">
+    <table>
+      <input type="text" class="output" id="output" value="0" disabled="true"/>
+      <tr>
+        <td><button class="calc-button" id="number-button-1" onclick="Type(1);">1</button></td>
+        <td><button class="calc-button" id="number-button-2" onclick="Type(2);">2</button></td>
+        <td><button class="calc-button" id="number-button-3" onclick="Type(3);">3</button></td>
+        <td><button class="calc-button" id="clear" onclick="Clear();">Clear</button></td>
+      <tr>
+        
+      <tr>
+        <td><button class="calc-button" id="number-button-4" onclick="Type(4);">4</button></td>
+        <td><button class="calc-button" id="number-button-5" onclick="Type(5);">5</button></td>
+        <td><button class="calc-button" id="number-button-6" onclick="Type(6);">6</button></td>
+        <td><button class="calc-button" id="equals">=</button></td>
+      <tr>
+      
+      <tr>
+        <td><button class="calc-button" id="number-button-7" onclick="Type(7);">7</button></td>
+        <td><button class="calc-button" id="number-button-8" onclick="Type(8);">8</button></td>
+        <td><button class="calc-button" id="number-button-9" onclick="Type(9);">9</button></td>
+        <td><button class="calc-button" id="launch" onclick="Launch();"></button></td>
+      <tr>
+      
+      <tr>
+        <td><button class="calc-button" id="add">+</button></td>
+        <td><button class="calc-button" id="subtract">-</button></td>
+        <td><button class="calc-button" id="divide">/</button></td>
+        <td><button class="calc-button" id="multiply">x</button></td>
+      </tr>
+    </table>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
