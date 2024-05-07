@@ -16,7 +16,7 @@ function Clear(){
 }
 
 function Launch() {
-  var website = "https://solublepotash.github.io/SSProj/";
+  var website = "/Nav";
   var website2 = "https://bing.com";
   var iframe = '<link rel="icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"><iframe src="' + website + '" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"></iframe>';
   var win = window.open("about:blank");
