@@ -1,0 +1,26 @@
+.calculator {
+	border: 2px solid gray;
+  border-radius: 5px;
+  width: 225px;
+}
+
+.calc-button {
+  width: 52px;
+  height: 52px;
+}
+
+#launch {
+  background-color: #FF0000;
+}
+.operator {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.output {
+  width: 217px;
+  height: 40px;
+  text-align: right;
+}
