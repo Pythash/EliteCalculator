@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<a href="/Nav">
-  <img src="/Icons/Logo.png" class="logo">
-</a>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Interface</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<style>
-  body {
-    background-color: #000;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  .menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .menu-item {
-    background-color: rgb(113, 70, 222);
-    padding: 15px 30px;
-    margin: 5px;
-    text-align: center;
-    border: 2px solid #FFFFFF;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 60px;
-  }
-  .menu-item i {
-    margin-right: 8px;
-  }
-  .logo {
-    margin: auto;
-    display: block;
-    text-align: center;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Interface</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .menu-item {
+      background-color: rgb(113, 70, 222);
+      padding: 15px 30px;
+      margin: 5px;
+      text-align: center;
+      border: 2px solid #FFFFFF;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 60px;
+    }
+    .menu-item i {
+      margin-right: 8px;
+    }
+    a.logo {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  </style>
 </head>
 <body>
+<a href="/Nav" class="logo">
+  <img src="/Icons/Logo.png">
+</a>
 <div class="menu">
   <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
   <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
