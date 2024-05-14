@@ -23,6 +23,13 @@
       width: 100%;
       position: relative;
     }
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; /* Ensure logo stays above buttons */
+    }
     .menu-item {
       background-color: rgb(113, 70, 222);
       padding: 15px 30px;
@@ -42,17 +49,13 @@
     .menu-item i {
       margin-right: 15px;
     }
-    .logo {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   </style>
 </head>
 <body>
 <div class="menu">
-  <img src="/Icons/logo.png" alt="Logo" class="logo">
+  <div class="logo-container">
+    <img src="/Icons/logo.png" alt="Logo">
+  </div>
   <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
   <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
   <button class="menu-item"><i class="fas fa-user-secret"></i>Pr0xies</button>
