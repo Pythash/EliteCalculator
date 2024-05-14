@@ -43,16 +43,16 @@
       margin-right: 15px;
     }
     .logo {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 8px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   </style>
 </head>
 <body>
-<img src="/Icons/Logo.png" class="logo">
 <div class="menu">
+  <img src="/Icons/logo.png" alt="Logo" class="logo">
   <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
   <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
   <button class="menu-item"><i class="fas fa-user-secret"></i>Pr0xies</button>
