@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Interface</title>
+  <title>Home | Schoology</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
     body {
@@ -11,10 +11,17 @@
       color: white;
       font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       height: 100vh;
       margin: 0;
+    }
+    .logo-container {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      background-color: #000; /* Optional: match the background */
+      z-index: 1; /* Ensure logo stays above buttons */
     }
     .menu {
       display: flex;
@@ -22,13 +29,7 @@
       flex-wrap: wrap;
       width: 100%;
       position: relative;
-    }
-    .logo-container {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1; /* Ensure logo stays above buttons */
+      z-index: 0;
     }
     .menu-item {
       background-color: rgb(113, 70, 222);
@@ -52,14 +53,14 @@
   </style>
 </head>
 <body>
-<div class="menu">
   <div class="logo-container">
     <img src="https://solublepotash.github.io/SSProj/Icons/Logo.png" alt="Logo">
   </div>
-  <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
-  <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
-  <button class="menu-item"><i class="fas fa-user-secret"></i>Pr0xies</button>
-  <button class="menu-item"><i class="fas fa-cog"></i>Settings</button>
-</div>
+  <div class="menu">
+    <button onclick="window.location.href='/Nav/g.html'" class="menu-item"><i class="fas fa-gamepad"></i>Games</button>
+    <button class="menu-item"><i class="fas fa-laptop"></i>Emulators</button>
+    <button class="menu-item"><i class="fas fa-user-secret"></i>Pr0xies</button>
+    <button class="menu-item"><i class="fas fa-cog"></i>Settings</button>
+  </div>
 </body>
 </html>
