@@ -1,3 +1,17 @@
+<!-- We love donovast acker. and boris. and baljeet -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,76 +29,80 @@
         }
         .button-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             gap: 120px;
-            margin-top: 20px; /* Add margin to top */
         }
         .button {
-            width: calc(25% - 40px); /* 25% width minus margins */
-            margin: 10px; /* Add margin to all sides */
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            filter: brightness(80%);
         }
         .button img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px;
-            transition: transform 0.3s, filter 0.3s;
         }
-        .button:hover img {
-            transform: scale(1.05);
-            filter: brightness(80%);
-        }
-        .button a {
-            display: block;
-            text-align: center;
+        .button p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             color: #fff;
             font-weight: bold;
             font-size: 16px;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 0 0 20px 20px;
         }
     </style>
 </head>
 <body>
-    <div class="button-container"></div>
+    <div class="button-container" id="game-buttons">
+        <!-- Buttons go here -->
+    </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('games.json')
+        fetch('games.json')
             .then(response => response.json())
-            .then(data => {
-                const buttonContainer = document.querySelector('.button-container');
-                let buttonDiv;
-                let buttonRow;
+            .then(games => {
+                const buttonContainer = document.getElementById('game-buttons');
 
-                data.forEach((game, index) => {
-                    if (index % 4 === 0) {
-                        buttonRow = document.createElement('div');
-                        buttonRow.classList.add('button-container');
-                        buttonContainer.appendChild(buttonRow);
-                    }
-
-                    buttonDiv = document.createElement('div');
+                games.forEach((game, index) => {
+                    const buttonDiv = document.createElement('div');
                     buttonDiv.classList.add('button');
-                    
-                    const img = document.createElement('img');
-                    img.src = game.icon;
-                    img.alt = game.name;
 
                     const link = document.createElement('a');
                     link.href = game.link;
-                    link.textContent = game.name;
 
-                    buttonDiv.appendChild(img);
+                    const iconImg = document.createElement('img');
+                    iconImg.src = game.icon;
+                    iconImg.alt = game.name;
+                    iconImg.width = 200;
+                    iconImg.height = 200;
+
+                    const buttonText = document.createElement('p');
+                    buttonText.textContent = game.name;
+
+                    link.appendChild(iconImg);
                     buttonDiv.appendChild(link);
+                    buttonDiv.appendChild(buttonText);
 
-                    buttonRow.appendChild(buttonDiv);
+                    buttonContainer.appendChild(buttonDiv);
+
+                    if ((index + 1) % 4 === 0) {
+                        buttonContainer.appendChild(document.createElement('br'));
+                    }
                 });
             })
-            .catch(error => console.error('Error fetching JSON:', error));
-        });
+            .catch(error => console.error('Error fetching games data:', error));
     </script>
 </body>
 </html>
