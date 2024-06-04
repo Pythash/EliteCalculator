@@ -87,7 +87,11 @@
                     
                 });
             })
-            .catch(error => document.write("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now."));
+            .catch(error => {
+                document.write("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
+                document.write("<br>Technical: " + error);
+            });
+
 
     </script>
 
