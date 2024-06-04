@@ -71,24 +71,24 @@
                             gameContainer.classList.add("button-container")
                             document.body.appendChild(gameContainer);
                             counter = 0;
-                        } else {
-                            const buttonDiv = document.createElement('div');
-                            buttonDiv.classList.add('button');
-                            
-                            const link = document.createElement('a');
-                            link.href = game.link;
-                            buttonDiv.appendChild(link);
-
-                            const iconImg = document.createElement('img');
-                            iconImg.src = game.icon;
-                            iconImg.alt = game.name;
-                            iconImg.width = 200;
-                            iconImg.height = 200;
-                            
-                            link.appendChild(iconImg);
-                            
-                            gameContainer.appendChild(buttonDiv);
-                        }
+                        } 
+                        
+                        const buttonDiv = document.createElement('div');
+                        buttonDiv.classList.add('button');
+                        
+                        const link = document.createElement('a');
+                        link.href = game.link;
+                        buttonDiv.appendChild(link);
+    
+                        const iconImg = document.createElement('img');
+                        iconImg.src = game.icon;
+                        iconImg.alt = game.name;
+                        iconImg.width = 200;
+                        iconImg.height = 200;
+                        
+                        link.appendChild(iconImg);
+                        
+                        gameContainer.appendChild(buttonDiv);
                         counter++;
                     });
                 } else {
