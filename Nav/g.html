@@ -1,18 +1,4 @@
-<!-- We love donovast acker. and boris. and baljeet -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,44 +51,35 @@
     </style>
 </head>
 <body>
-    <div class="button-container" id="game-buttons">
-        <!-- Buttons go here -->
+    <div class="button-container">
+        <div class="button">
+            <a href="play.html?game=smashkarts">
+            <img src="/Icons/Smashkarts.png" alt="Smash Karts" width="200" height="200">
+            </a>
+        </div>
+        <div class="button">
+            <a href="play.html?game=russiancardriver">
+            <img src="https://solublepotash.github.io/SSProj2/russiancardriver/russian-car-driver.webp" alt="Russian Car Driver" width="200" height="200">
+            </a>
+        </div>
+        <div class="button">
+            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 3">
+            <a href="play.html">Button 3</a>
+        </div>
+        <div class="button">
+            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 4">
+            <a href="play.html">Button 4</a>
+        </div>
     </div>
-
-    <script>
-        fetch('games.json')
-            .then(response => response.json())
-            .then(games => {
-                const buttonContainer = document.getElementById('game-buttons');
-
-                games.forEach((game, index) => {
-                    const buttonDiv = document.createElement('div');
-                    buttonDiv.classList.add('button');
-
-                    const link = document.createElement('a');
-                    link.href = game.link;
-
-                    const iconImg = document.createElement('img');
-                    iconImg.src = game.icon;
-                    iconImg.alt = game.name;
-                    iconImg.width = 200;
-                    iconImg.height = 200;
-
-                    const buttonText = document.createElement('p');
-                    buttonText.textContent = game.name;
-
-                    link.appendChild(iconImg);
-                    buttonDiv.appendChild(link);
-                    buttonDiv.appendChild(buttonText);
-
-                    buttonContainer.appendChild(buttonDiv);
-
-                    if ((index + 1) % 4 === 0) {
-                        buttonContainer.appendChild(document.createElement('br'));
-                    }
-                });
-            })
-            .catch(error => console.error('Error fetching games data:', error));
-    </script>
+    <div class="button-container">
+        <div class="button">
+            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 5">
+            <a href="play.html">Button 5</a>
+        </div>
+        <div class="button">
+            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 6">
+            <a href="play.html">Button 6</a>
+        </div>
+    </div>
 </body>
 </html>
