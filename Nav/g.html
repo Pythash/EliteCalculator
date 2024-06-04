@@ -1,4 +1,6 @@
-!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,6 +53,44 @@
     </style>
 </head>
 <body>
+
+    <script>
+        var counter = 0;
+        const gameContainer = null;
+        fetch('gamesd.json')
+            .then(response => response.json())
+            .then(data => {
+                data.items.forEach(game => {
+                    if counter == 4 || counter == 0{
+                        gameContainer = document.createElement("div")
+                        gameContainer.classList.add("button-container")
+                        counter = 0;
+                    }
+                    else {
+                        const buttonDiv = document.createElement('div');
+                        buttonDiv.classList.add('button');
+                        
+                        const link = document.createElement('a');
+                        link.href = game.link;
+                        buttonDiv.appendChild(link);
+
+                        const iconImg = document.createElement('img');
+                        iconImg.src = game.icon;
+                        iconImg.alt = game.name;
+                        iconImg.width = 200;
+                        iconImg.height = 200;
+                        
+                        link.appendChild(iconImg)
+                        
+                        gameContainer.appendChild(game);
+                    }
+                    
+                });
+            })
+            .catch(error => alert("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
+    </script>
+
+    <!-- ack
     <div class="button-container">
         <div class="button">
             <a href="play.html?game=smashkarts">
@@ -81,5 +121,6 @@
             <a href="play.html">Button 6</a>
         </div>
     </div>
+    -->
 </body>
 </html>
