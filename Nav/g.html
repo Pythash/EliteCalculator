@@ -54,7 +54,8 @@
 
     <script>
         var counter = 0;
-        const gameContainer = null;
+        let gameContainer = null; // Changed from const to let
+
         fetch('games.json')
             .then(response => {
                 if (!response.ok) {
