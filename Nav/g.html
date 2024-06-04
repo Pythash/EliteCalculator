@@ -7,41 +7,46 @@
         body {
             background-color: #000;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
         .button-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 120px;
         }
         .button {
-            margin: 0 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            filter: brightness(80%);
         }
         .button img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 20px;
-            transition: transform 0.3s, filter 0.3s;
-        }
-        .button:hover img {
-            transform: scale(1.05);
-            filter: brightness(80%);
         }
         .button a {
-            display: block;
-            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             color: #fff;
             font-weight: bold;
             font-size: 16px;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 0 0 20px 20px;
         }
     </style>
 </head>
@@ -54,9 +59,17 @@
             .then(response => response.json())
             .then(data => {
                 const buttonContainer = document.querySelector('.button-container');
+                let buttonDiv;
+                let buttonRow;
 
-                data.forEach(game => {
-                    const buttonDiv = document.createElement('div');
+                data.forEach((game, index) => {
+                    if (index % 4 === 0) {
+                        buttonRow = document.createElement('div');
+                        buttonRow.classList.add('button-container');
+                        buttonContainer.appendChild(buttonRow);
+                    }
+
+                    buttonDiv = document.createElement('div');
                     buttonDiv.classList.add('button');
                     
                     const img = document.createElement('img');
@@ -64,13 +77,13 @@
                     img.alt = game.name;
 
                     const link = document.createElement('a');
-                    link.href = game.link;
+                    link.href = "/Nav/"+game.link;
                     link.textContent = game.name;
 
                     buttonDiv.appendChild(img);
                     buttonDiv.appendChild(link);
 
-                    buttonContainer.appendChild(buttonDiv);
+                    buttonRow.appendChild(buttonDiv);
                 });
             })
             .catch(error => console.error('Error fetching JSON:', error));
