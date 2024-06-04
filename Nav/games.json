@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Smash Karts",
+        "icon": "/Icons/Smashkarts.png",
+        "link": "play.html?game=smashkarts"
+    },
+    {
+        "name": "Russian Car Driver",
+        "icon": "https://solublepotash.github.io/SSProj2/russiancardriver/russian-car-driver.webp",
+        "link": "play.html?game=russiancardriver"
+    },
+    {
+        "name": "Button 3",
+        "icon": "https://via.placeholder.com/200x200",
+        "link": "play.html"
+    },
+    {
+        "name": "Button 4",
+        "icon": "https://via.placeholder.com/200x200",
+        "link": "play.html"
+    },
+    {
+        "name": "Button 5",
+        "icon": "https://via.placeholder.com/200x200",
+        "link": "play.html"
+    },
+    {
+        "name": "Button 6",
+        "icon": "https://via.placeholder.com/200x200",
+        "link": "play.html"
+    }
+]
