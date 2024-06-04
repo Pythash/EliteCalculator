@@ -18,6 +18,13 @@
             justify-content: center;
             gap: 20px;
         }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
         .button {
             width: 200px;
             height: 200px;
@@ -60,7 +67,15 @@
             .then(response => response.json())
             .then(data => {
                 const buttonContainer = document.querySelector('.button-container');
-                data.forEach(game => {
+                let buttonRow;
+
+                data.forEach((game, index) => {
+                    if (index % 4 === 0) {
+                        buttonRow = document.createElement('div');
+                        buttonRow.classList.add('button-row');
+                        buttonContainer.appendChild(buttonRow);
+                    }
+
                     const buttonDiv = document.createElement('div');
                     buttonDiv.classList.add('button');
                     
@@ -69,13 +84,13 @@
                     img.alt = game.name;
 
                     const link = document.createElement('a');
-                    link.href = "/Nav/"+game.link;
+                    link.href = game.link;
                     link.textContent = game.name;
 
                     buttonDiv.appendChild(img);
                     buttonDiv.appendChild(link);
 
-                    buttonContainer.appendChild(buttonDiv);
+                    buttonRow.appendChild(buttonDiv);
                 });
             })
             .catch(error => console.error('Error fetching JSON:', error));
