@@ -69,6 +69,7 @@
                         if (counter == 4 || counter == 0) {
                             gameContainer = document.createElement("div")
                             gameContainer.classList.add("button-container")
+                            document.body.appendChild(gameContainer);
                             counter = 0;
                         } else {
                             const buttonDiv = document.createElement('div');
@@ -86,8 +87,9 @@
                             
                             link.appendChild(iconImg);
                             
-                            gameContainer.appendChild(game);
+                            gameContainer.appendChild(buttonDiv);
                         }
+                        counter++;
                     });
                 } else {
                     throw new Error('Invalid data format');
