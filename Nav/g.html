@@ -61,7 +61,7 @@
             .then(response => response.json())
             .then(data => {
                 data.items.forEach(game => {
-                    if counter == 4 || counter == 0{
+                    if (counter == 4 || counter == 0) {
                         gameContainer = document.createElement("div")
                         gameContainer.classList.add("button-container")
                         counter = 0;
