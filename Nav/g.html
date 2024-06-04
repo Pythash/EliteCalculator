@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,74 +56,47 @@
         var counter = 0;
         const gameContainer = null;
         fetch('games.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
-                data.items.forEach(game => {
-                    if (counter == 4 || counter == 0) {
-                        gameContainer = document.createElement("div")
-                        gameContainer.classList.add("button-container")
-                        counter = 0;
-                    }
-                    else {
-                        const buttonDiv = document.createElement('div');
-                        buttonDiv.classList.add('button');
-                        
-                        const link = document.createElement('a');
-                        link.href = game.link;
-                        buttonDiv.appendChild(link);
+                if (data && Array.isArray(data)) {
+                    data.forEach(game => {
+                        if (counter == 4 || counter == 0) {
+                            gameContainer = document.createElement("div")
+                            gameContainer.classList.add("button-container")
+                            counter = 0;
+                        } else {
+                            const buttonDiv = document.createElement('div');
+                            buttonDiv.classList.add('button');
+                            
+                            const link = document.createElement('a');
+                            link.href = game.link;
+                            buttonDiv.appendChild(link);
 
-                        const iconImg = document.createElement('img');
-                        iconImg.src = game.icon;
-                        iconImg.alt = game.name;
-                        iconImg.width = 200;
-                        iconImg.height = 200;
-                        
-                        link.appendChild(iconImg);
-                        
-                        gameContainer.appendChild(game);
-                    }
-                    
-                });
+                            const iconImg = document.createElement('img');
+                            iconImg.src = game.icon;
+                            iconImg.alt = game.name;
+                            iconImg.width = 200;
+                            iconImg.height = 200;
+                            
+                            link.appendChild(iconImg);
+                            
+                            gameContainer.appendChild(game);
+                        }
+                    });
+                } else {
+                    throw new Error('Invalid data format');
+                }
             })
             .catch(error => {
                 document.write("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
                 document.write("<br>Technical: " + error);
             });
-
-
     </script>
 
-    <!-- ack
-    <div class="button-container">
-        <div class="button">
-            <a href="play.html?game=smashkarts">
-            <img src="/Icons/Smashkarts.png" alt="Smash Karts" width="200" height="200">
-            </a>
-        </div>
-        <div class="button">
-            <a href="play.html?game=russiancardriver">
-            <img src="https://solublepotash.github.io/SSProj2/russiancardriver/russian-car-driver.webp" alt="Russian Car Driver" width="200" height="200">
-            </a>
-        </div>
-        <div class="button">
-            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 3">
-            <a href="play.html">Button 3</a>
-        </div>
-        <div class="button">
-            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 4">
-            <a href="play.html">Button 4</a>
-        </div>
-    </div>
-    <div class="button-container">
-        <div class="button">
-            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 5">
-            <a href="play.html">Button 5</a>
-        </div>
-        <div class="button">
-            <img src="https://via.placeholder.com/200x200" alt="Placeholder Image 6">
-            <a href="play.html">Button 6</a>
-        </div>
-    </div>
-    -->
 </body>
 </html>
