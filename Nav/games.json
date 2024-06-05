@@ -5,7 +5,7 @@
         "link": "play.html?game=smashkarts"
     },
     {
-        "name": 1",
+        "name": "1",
         "icon": "/Icons/1.webp",
         "link": "play.html?game=russiancardriver"
     },
@@ -30,8 +30,96 @@
         "link": "play.html?=8ball-billards-classic"
     },
     {
-        "name": "10 Minute Till Dawn",
-        "icon": "/Icons/10-Minute-Till-Dawn.png",
-        "link": "play.html?=10-Minute-Till-Dawn"
+        "name": "10 Minutes Till Dawn",
+        "icon": "/Icons/10-minutes-till-dawn.png",
+        "link": "play.html?=10-Minutes-Till-Dawn"
     },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/achieveunlocked.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "Achievment Unlocked",
+        "icon": "/Icons/achieveunlocked.png",
+        "link": "play.html?=achieveunlocked"
+    },
+    {
+        "name": "Achievment Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?=achieveunlocked2"
+    },
+
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    {
+        "name": "2020 Game",
+        "icon": "/Icons/2020-Game.png",
+        "link": "play.html?=2020-Game"
+    },
+    
 ]
