@@ -1,13 +1,13 @@
 [
     {
         "name": "Request A Game",
-        "icon": "/Icons/smashkarts.png",
-        "link": "play.html?game=smashkarts"
+        "icon": "/Icons/Formlogo.png",
+        "link": "https://docs.google.com/forms/d/1SEEM8Q0TdIPZvnV-puDnkIYYDpg2xttkbRUmGVRACog/"
     },
     {
         "name": "1",
-        "icon": "/Icons/1.pbf",
-        "link": "play.html?game=russiancardriver"
+        "icon": "/Icons/1.png",
+        "link": "play.html?game=1"
     },
     {
         "name": "1 On 1 Soccer",
