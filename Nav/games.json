@@ -22,32 +22,32 @@
     {
         "name": "2048",
         "icon": "/Icons/2048.png",
-        "link": "play.html?=2048"
+        "link": "play.html?game=2048"
     },
     {
         "name": "8 Ball",
         "icon": "/Icons/8ball-billards-classic.png",
-        "link": "play.html?=8ball-billards-classic"
+        "link": "play.html?game=8ball-billards-classic"
     },
     {
         "name": "10 Minutes Till Dawn",
         "icon": "/Icons/10-minutes-till-dawn.png",
-        "link": "play.html?=10-Minutes-Till-Dawn"
+        "link": "play.html?game=10-Minutes-Till-Dawn"
     },
     {
         "name": "2020 Game",
         "icon": "/Icons/achieveunlocked.png",
-        "link": "play.html?=2020-Game"
+        "link": "play.html?game=2020-Game"
     },
     {
         "name": "Achievment Unlocked",
         "icon": "/Icons/achieveunlocked.png",
-        "link": "play.html?=achieveunlocked"
+        "link": "play.html?game=achieveunlocked"
     },
     {
         "name": "Achievment Unlocked 2",
         "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?=achieveunlocked2"
+        "link": "play.html?game=achieveunlocked2"
     },
 
     {
