@@ -1,32 +1,37 @@
 [
     {
-        "name": "Smash Karts",
+        "name": "Request A Game",
         "icon": "/Icons/smashkarts.png",
         "link": "play.html?game=smashkarts"
     },
     {
-        "name": "Russian Car Driver",
-        "icon": "/Icons/russiancardriver.webp",
+        "name": 1",
+        "icon": "/Icons/1.webp",
         "link": "play.html?game=russiancardriver"
     },
     {
-        "name": "Button 3",
-        "icon": "https://via.placeholder.com/200x200",
-        "link": "play.html"
+        "name": "1 On 1 Soccer",
+        "icon": "/Icons/1on1soccer.png",
+        "link": "play.html?game=1on1soccer"
     },
     {
-        "name": "Button 4",
-        "icon": "https://via.placeholder.com/200x200",
-        "link": "play.html"
+        "name": "1v1.lol",
+        "icon": "/Icons/1v1lol.png",
+        "link": "play.html?game=1v1lol"
     },
     {
-        "name": "Button 5",
-        "icon": "https://via.placeholder.com/200x200",
-        "link": "play.html"
+        "name": "2048",
+        "icon": "/Icons/2048.png",
+        "link": "play.html?=2048"
     },
     {
-        "name": "Button 6",
-        "icon": "https://via.placeholder.com/200x200",
-        "link": "play.html"
-    }
+        "name": "8 Ball",
+        "icon": "/Icons/8ball-billards-classic.png",
+        "link": "play.html?=8ball-billards-classic"
+    },
+    {
+        "name": "10 Minute Till Dawn",
+        "icon": "/Icons/10-Minute-Till-Dawn.png",
+        "link": "play.html?=10-Minute-Till-Dawn"
+    },
 ]
