@@ -1,12 +1,12 @@
 [
     {
         "name": "Smash Karts",
-        "icon": "/Icons/Smashkarts.png",
+        "icon": "/Icons/smashkarts.png",
         "link": "play.html?game=smashkarts"
     },
     {
         "name": "Russian Car Driver",
-        "icon": "https://solublepotash.github.io/SSProj2/projects/russiancardriver/russian-car-driver.webp",
+        "icon": "/Icons/russiancardriver.webp",
         "link": "play.html?game=russiancardriver"
     },
     {
