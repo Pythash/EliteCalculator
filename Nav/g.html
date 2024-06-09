@@ -16,9 +16,9 @@
         .button-container {
             display: flex;
             gap: 120px;
-            margin-bottom: 30px; /* Add this line for vertical spacing */
-            flex-direction: column; /* Allow stacking button and text */
-            align-items: center; /* Center items horizontally */
+            margin-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
         }
         .button {
             width: 200px;
@@ -52,7 +52,7 @@
             font-size: 16px;
         }
         .game-name {
-            margin-top: 10px; /* Add some space above the game name */
+            margin-top: 10px;
             color: #fff;
             font-size: 16px;
             text-align: center;
@@ -84,6 +84,7 @@
                         
                         const buttonDiv = document.createElement('div');
                         buttonDiv.classList.add('button');
+                        gameContainer.appendChild(buttonDiv);
                         
                         const link = document.createElement('a');
                         link.href = game.link;
@@ -100,9 +101,8 @@
                         const gameName = document.createElement('p');
                         gameName.classList.add('game-name');
                         gameName.textContent = game.name;
-                        
-                        gameContainer.appendChild(buttonDiv);
                         gameContainer.appendChild(gameName);
+                        
                         counter++;
                     });
                 } else {
