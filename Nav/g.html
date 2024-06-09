@@ -16,6 +16,7 @@
         .button-container {
             display: flex;
             gap: 120px;
+            margin-bottom: 30px;
         }
         .button {
             width: 200px;
@@ -59,7 +60,7 @@
         fetch('games.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Network response was very ack...');
                 }
                 return response.json();
             })
@@ -92,11 +93,11 @@
                         counter++;
                     });
                 } else {
-                    throw new Error('Invalid data format');
+                    throw new Error('Invalid ack data format');
                 }
             })
             .catch(error => {
-                document.write("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
+                document.write("Uh oh, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
                 document.write("<br>Technical: " + error);
             });
     </script>
