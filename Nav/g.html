@@ -16,9 +16,7 @@
         .button-container {
             display: flex;
             gap: 120px;
-            margin-bottom: 30px;
-            flex-direction: column;
-            align-items: center;
+            margin-bottom: 10px;
         }
         .button {
             width: 200px;
@@ -51,12 +49,6 @@
             font-weight: bold;
             font-size: 16px;
         }
-        .game-name {
-            margin-top: 10px;
-            color: #fff;
-            font-size: 16px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -84,7 +76,6 @@
                         
                         const buttonDiv = document.createElement('div');
                         buttonDiv.classList.add('button');
-                        gameContainer.appendChild(buttonDiv);
                         
                         const link = document.createElement('a');
                         link.href = game.link;
@@ -98,11 +89,7 @@
                         
                         link.appendChild(iconImg);
                         
-                        const gameName = document.createElement('p');
-                        gameName.classList.add('game-name');
-                        gameName.textContent = game.name;
-                        gameContainer.appendChild(gameName);
-                        
+                        gameContainer.appendChild(buttonDiv);
                         counter++;
                     });
                 } else {
