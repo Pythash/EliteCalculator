@@ -56,7 +56,7 @@
     },
     {
         "name": "Backrooms",
-        "icon": "/Icons/achieveunlocked2.png",
+        "icon": "/Icons/backrooms.png",
         "link": "play.html?game=backrooms"
     },
     {
