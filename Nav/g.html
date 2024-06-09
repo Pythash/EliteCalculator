@@ -16,7 +16,9 @@
         .button-container {
             display: flex;
             gap: 120px;
-            margin-bottom: 30px;
+            margin-bottom: 30px; /* Add this line for vertical spacing */
+            flex-direction: column; /* Allow stacking button and text */
+            align-items: center; /* Center items horizontally */
         }
         .button {
             width: 200px;
@@ -49,6 +51,12 @@
             font-weight: bold;
             font-size: 16px;
         }
+        .game-name {
+            margin-top: 10px; /* Add some space above the game name */
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +68,7 @@
         fetch('games.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was very ack...');
+                    throw new Error('Network response was not ok');
                 }
                 return response.json();
             })
@@ -89,15 +97,20 @@
                         
                         link.appendChild(iconImg);
                         
+                        const gameName = document.createElement('p');
+                        gameName.classList.add('game-name');
+                        gameName.textContent = game.name;
+                        
                         gameContainer.appendChild(buttonDiv);
+                        gameContainer.appendChild(gameName);
                         counter++;
                     });
                 } else {
-                    throw new Error('Invalid ack data format');
+                    throw new Error('Invalid data format');
                 }
             })
             .catch(error => {
-                document.write("Uh oh, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
+                document.write("Uh oh, donovast alert, this page seems to be broken. Baljeet is working tirelessly to fix it right now.");
                 document.write("<br>Technical: " + error);
             });
     </script>
