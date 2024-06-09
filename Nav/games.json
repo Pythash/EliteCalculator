@@ -91,7 +91,7 @@
     },
     {
         "name": "Bloons Tower Defense",
-        "icon": "/Icons/bloonstd.png",
+        "icon": "/Icons/bloonstd.jpeg",
         "link": "play.html?game=bloonstd"
     },
     {
@@ -108,30 +108,5 @@
         "name": "Crossy Road",
         "icon": "/Icons/crossyroad.png",
         "link": "play.html?game=crossyroad"
-    },
-    {
-        "name": "Achievment Unlocked 2",
-        "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?game=achieveunlocked2"
-    },
-    {
-        "name": "Achievment Unlocked 2",
-        "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?game=achieveunlocked2"
-    },
-    {
-        "name": "Achievment Unlocked 2",
-        "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?game=achieveunlocked2"
-    },
-    {
-        "name": "Achievment Unlocked 2",
-        "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?game=achieveunlocked2"
-    },
-    {
-        "name": "Achievment Unlocked 2",
-        "icon": "/Icons/achieveunlocked2.png",
-        "link": "play.html?game=achieveunlocked2"
-    },
+    }
 ]
