@@ -36,17 +36,102 @@
     },
     {
         "name": "2020 Game",
-        "icon": "/Icons/2020-Game.jpeg",
+        "icon": "/Icons/2020-game.jpeg",
         "link": "play.html?game=2020-Game"
     },
     {
-        "name": "Achievment Unlocked",
+        "name": "Achievement Unlocked",
         "icon": "/Icons/achieveunlocked.png",
         "link": "play.html?game=achieveunlocked"
+    },
+    {
+        "name": "Achievement Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=achieveunlocked2"
+    },
+    {
+        "name": "Among Us",
+        "icon": "/Icons/amongus.png",
+        "link": "play.html?game=among-us"
+    },
+    {
+        "name": "Backrooms",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=backrooms"
+    },
+    {
+        "name": "Bad Ice Cream",
+        "icon": "/Icons/badicecream.png",
+        "link": "play.html?game=badicecream"
+    },
+    {
+        "name": "Bad Time Sim (Sans Boss Fight)",
+        "icon": "/Icons/badtimesim.png",
+        "link": "play.html?game=badtimesimulator"
+    },
+    {
+        "name": "Bad Piggies",
+        "icon": "/Icons/badpiggies.png",
+        "link": "play.html?game=badpiggies"
+    },
+    {
+        "name": "Baldis Basics",
+        "icon": "/Icons/baldisbasics.png",
+        "link": "play.html?game=baldis-basics"
+    },
+    {
+        "name": "Basketball Stars",
+        "icon": "/Icons/basketballstars.png",
+        "link": "play.html?game=basketball-stars"
+    },
+    {
+        "name": "Bitlife",
+        "icon": "/Icons/bitlife.png",
+        "link": "play.html?game=bitlife"
+    },
+    {
+        "name": "Bloons Tower Defense",
+        "icon": "/Icons/bloonstd.png",
+        "link": "play.html?game=bloonstd"
+    },
+    {
+        "name": "Burger And Frights",
+        "icon": "/Icons/burgerandfrights.png",
+        "link": "play.html?game=burgerandfrights"
+    },
+    {
+        "name": "Burrito Bison",
+        "icon": "/Icons/burritobison.png",
+        "link": "play.html?game=burritobison"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
     },
     {
         "name": "Achievment Unlocked 2",
         "icon": "/Icons/achieveunlocked2.png",
         "link": "play.html?game=achieveunlocked2"
-    }
+    },
+    {
+        "name": "Achievment Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=achieveunlocked2"
+    },
+    {
+        "name": "Achievment Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=achieveunlocked2"
+    },
+    {
+        "name": "Achievment Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=achieveunlocked2"
+    },
+    {
+        "name": "Achievment Unlocked 2",
+        "icon": "/Icons/achieveunlocked2.png",
+        "link": "play.html?game=achieveunlocked2"
+    },
 ]
