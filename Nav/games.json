@@ -37,7 +37,7 @@
     {
         "name": "2020 Game",
         "icon": "/Icons/2020-game.jpeg",
-        "link": "play.html?game=2020-Game"
+        "link": "play.html?game=2020-game"
     },
     {
         "name": "Achievement Unlocked",
