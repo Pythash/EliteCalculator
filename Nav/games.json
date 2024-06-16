@@ -52,7 +52,7 @@
     },
     {
         "name": "Adventure Capitalist",
-        "icon": "/Icons/AdventureCapitalist.webp",
+        "icon": "/Icons/adventurecapitalist.webp",
         "link": "play.html?game=adventure-capitalist"
     },
     {
@@ -146,8 +146,8 @@
         "link": "play.html?game=doodle-jump"
     },
     {
-        "name": "Drift Boss",
-        "icon": "/Icons/driftboss2.png",
+        "name": "Draw The Hill",
+        "icon": "/Icons/drawthehill.png",
         "link": "play.html?game=draw-the-hill"
     }
 ]
