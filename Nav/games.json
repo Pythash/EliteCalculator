@@ -24,6 +24,7 @@
         "icon": "/Icons/2048.png",
         "link": "play.html?game=2048"
     },
+
     {
         "name": "8 Ball",
         "icon": "/Icons/8ball-billards-classic.png",
@@ -48,6 +49,11 @@
         "name": "Achievement Unlocked 2",
         "icon": "/Icons/achieveunlocked2.png",
         "link": "play.html?game=achieveunlocked2"
+    },
+    {
+        "name": "Adventure Capitalist",
+        "icon": "/Icons/AdventureCapitalist.webp",
+        "link": "play.html?game=adventure-capitalist"
     },
     {
         "name": "Among Us",
@@ -108,5 +114,126 @@
         "name": "Crossy Road",
         "icon": "/Icons/crossyroad.png",
         "link": "play.html?game=crossyroad"
-    }
+    },
+    {
+        "name": "Cut The Rope",
+        "icon": "/Icons/cuttherope.png",
+        "link": "play.html?game=ctr"
+    },
+    {
+        "name": "Cubefield",
+        "icon": "/Icons/cubefield.jpeg",
+        "link": "play.html?game=cubefield"
+    },
+    {
+        "name": "Deal Or No Deal",
+        "icon": "/Icons/dealornodeal.jpeg",
+        "link": "play.html?game=deal-or-no-deal"
+    },
+    {
+        "name": "Death Run 3D",
+        "icon": "/Icons/deathrun3d.png",
+        "link": "play.html?game=death-run-3d"
+    },
+    {
+        "name": "Doge Miner",
+        "icon": "/Icons/dogeminer.png",
+        "link": "play.html?game=dogeminer"
+    },
+    {
+        "name": "Doodle Jump",
+        "icon": "/Icons/doodlejump.png",
+        "link": "play.html?game=doodle-jump"
+    },
+    {
+        "name": "Drift Boss",
+        "icon": "/Icons/driftboss2.png",
+        "link": "play.html?game=draw-the-hill"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    {
+        "name": "Crossy Road",
+        "icon": "/Icons/crossyroad.png",
+        "link": "play.html?game=crossyroad"
+    },
+    
 ]
