@@ -21,5 +21,4 @@ function Launch() {
   var win = window.open("about:blank");
   win.document.write(iframe);
   win.document.title = "Elite Calculator";
-  document.documentElement.innerHTML = iframe;
 }
